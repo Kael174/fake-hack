@@ -36,8 +36,9 @@ ping localhost -n 1 -w 500 >nul
 
 echo İp kopyalandı
 
-start "" wscript "C:\Users\ASUS\Desktop\fake-hack\fake-hackvbs.vbs"
+start "" "%~dp0scripts\fake-hackvbs.vbs"
 
 timeout /t 3 >nul
+
 
 exit
